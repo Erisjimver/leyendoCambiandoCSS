@@ -29,8 +29,23 @@ table{
 <script>
 
 	$(document).ready(function(){
-		var colorFondo=$("#primer_parrafo").css("background-color");
-	})
+		//var colorFondo=$("#primer_parrafo").css("background-color");
+		//var colorFondo=$("#primer_parrafo").css("border"."2px dotted blue");
+
+		document.getElementById("aumenta1").addEventListener("click",aumentar,false);
+
+	});
+
+	function aumentar(){
+
+		var tamDefecto=$("#noticia1").css("font-size");
+
+		//tamDefecto=parseInt(tamDefecto);
+		tamDefecto=parseFloat(tamDefecto);
+
+		$("#noticia1").css("font-size", tamDefecto*1.05);	
+		
+	}
 
 
 </script>
