@@ -33,6 +33,7 @@ table{
 		//var colorFondo=$("#primer_parrafo").css("border"."2px dotted blue");
 
 		document.getElementById("aumenta1").addEventListener("click",aumentar,false);
+		document.getElementById("disminuye1").addEventListener("click",disminuir,false);
 
 	});
 
@@ -44,6 +45,17 @@ table{
 		tamDefecto=parseFloat(tamDefecto);
 
 		$("#noticia1").css("font-size", tamDefecto*1.05);	
+		
+	}
+
+	function disminuir(){
+
+		var tamDefecto=$("#noticia1").css("font-size");
+
+		//tamDefecto=parseInt(tamDefecto);//si se habilita parseInt se debe cambiar el valor de la multiplicacion por 1.05
+		tamDefecto=parseFloat(tamDefecto);
+
+		$("#noticia1").css("font-size", tamDefecto*0.95);	
 		
 	}
 
