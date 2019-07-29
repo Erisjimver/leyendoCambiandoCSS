@@ -3,77 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>Documento sin título</title>
-<style>
 
-h1{
-	text-align:center;
-}
-
-div{
-	width:20%;
-	margin:0 100px;
-	float:left;
-	border:#F00 solid 2px;
-	padding:10px;
-}
-
-table{
-	width:100%;
-	margin-top:10px;
-}
-
-
-</style>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
 <script src="Jquery/jquery-1.6.3.min.js"></script>
-
-<script>
-
-	//var zonaActuacion;
-
-	$(document).ready(function(){
-
-
-		var botones = document.querySelectorAll("input");
-
-		for(var i=0;botones.length;i++){
-
-			botones[i].addEventListener("click",modo_lectura,false);
-
-		}
-
-
-	});
-
-	function modo_lectura(e){
-
-		var zonaActuacion;
-
-		if(e.target==lectura1)
-		{
-			zonaActuacion="#noticia1";
-		}
-		else if(e.target==lectura2)
-		{
-			zonaActuacion="#noticia2";
-		}
-		else if(e.target==lectura3)
-		{
-			zonaActuacion="#noticia3";
-		}
-		
-		var tamDefecto=$(zonaActuacion).css("font-size");
-
-		tamDefecto=parseFloat(tamDefecto);
-
-		$(zonaActuacion).css({"background-color": "#000",
-							 "font-size": "20px",
-							 "text-align":"justify",
-							"color":"#FFF"});	
-		
-	}
-
-
-</script>
+<script src="js/programacion.js"></script>
 </head>
 
 <body>
